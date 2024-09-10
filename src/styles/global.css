@@ -1,0 +1,62 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+
+  --primary-color: #D658B3;
+  --secondary-color: #45B442;
+
+  --gray-700: #332B31;
+  --gray-600: #4A4448;
+  --gray-500: #756C71;
+  --gray-400: #D3CFD2;
+  --gray-300: #DFDCDF;
+  --gray-200: #E9E7E9;
+  --gray-100: #F4F1F2;
+  --white:    #FFFFFF;
+
+  --font-family: "Oxygen", "sans-serif";
+  --title-md: 500 1.5rem/1.4 var(--font-family);
+  --title-sm: 500 1.125rem/1.4 var(--font-family);
+  --subtitle-md: 500 .875rem/1.4 var(--font-family);
+  --subtitle-sm: 500 .75rem/1.4 var(--font-family);
+  --text-md: 400 1rem/1.4 var(--font-family);
+  --text-sm: 400 .875rem/1.4 var(--font-family);
+  --text-xs: 400 .75rem/1.4 var(--font-family);
+}
+
+.title-md {
+  font: var(--title-md);
+}
+.title-sm {
+  font: var(--title-sm);
+}
+.subtitle-md {
+  font: var(--subtitle-md);
+  text-transform: uppercase;
+}
+.subtitle-sm {
+  font: var(--subtitle-sm);
+  text-transform: uppercase;
+}
+.text-md {
+  font: var(--text-md);
+}
+.text-sm {
+  font: var(--text-sm);
+}
+.text-xs {
+  font: var(--text-xs);
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: rgb(254, 190, 224);
+}
