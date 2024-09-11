@@ -27,30 +27,24 @@
   --text-md: 400 1rem/1.4 var(--font-family);
   --text-sm: 400 .875rem/1.4 var(--font-family);
   --text-xs: 400 .75rem/1.4 var(--font-family);
+
+  --gap-lg: 2rem;
+  --gap-md: 1rem;
+  --gap-sm: .5rem;
+
+  --logo-y: 3rem;
+  --search-padding-bottom: 1.25rem;
 }
 
-.title-md {
-  font: var(--title-md);
-}
-.title-sm {
-  font: var(--title-sm);
-}
-.subtitle-md {
-  font: var(--subtitle-md);
-  text-transform: uppercase;
-}
-.subtitle-sm {
-  font: var(--subtitle-sm);
-  text-transform: uppercase;
-}
-.text-md {
-  font: var(--text-md);
-}
-.text-sm {
-  font: var(--text-sm);
-}
-.text-xs {
-  font: var(--text-xs);
+@media (width >= 80em) {
+  :root {
+    --gap-lg: 4rem;
+    --gap-md: 2rem;
+    --gap-sm: 1rem;
+
+    --logo-y: 3.5rem;
+    --search-padding-bottom: 4rem;
+  }
 }
 
 html {
@@ -58,5 +52,5 @@ html {
 }
 
 body {
-  background-color: rgb(254, 190, 224);
+  background-color: var(--gray-200);
 }

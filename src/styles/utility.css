@@ -1,0 +1,66 @@
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  padding: var(--gap-md) .75rem var(--search-padding-bottom);
+  max-width: 25rem;
+  margin-inline: auto;
+  margin-top: var(--gap-md);
+}
+
+.logo {
+  height: var(--logo-y);
+  width: fit-content;
+  align-self: center;
+}
+
+.content {
+  display: grid;
+  flex-direction: column;
+  grid-template-areas:
+    "profile"
+    "loyalty"
+    "rewards"
+    "history";
+  grid-template-rows: 1fr 2.5fr 1fr 5fr;
+  row-gap: var(--gap-sm);
+  column-gap: 1.5rem;
+
+  max-width: 57rem;
+  margin-inline: max(.75rem, calc((100% - 57rem) / 2));
+}
+
+@media (width >=80em) {
+  .content {
+    grid-template-areas:
+    "profile loyalty loyalty"
+    "history loyalty loyalty"
+    "history rewards rewards";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+}
+
+.content section {
+  border-radius: 12px;
+}
+
+#profile {
+  grid-area: profile;
+  background-color: blueviolet;
+}
+
+#loyalty {
+  grid-area: loyalty;
+  background-color: darkslategray;
+}
+
+#rewards {
+  grid-area: rewards;
+  background-color: darkkhaki;
+}
+
+#history {
+  grid-area: history;
+  background-color: aquamarine;
+}
