@@ -1,4 +1,6 @@
 @import url(global.css);
+@import url(utility.css);
 @import url(buttons.css);
 @import url(inputs.css);
-@import url(utility.css);
+@import url(hero.css);
+@import url(profile.css);
