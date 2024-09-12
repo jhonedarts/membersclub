@@ -1,3 +1,7 @@
+#hero {
+  margin-top: var(--gap-md);
+}
+
 .search-field {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,6 @@
   padding: var(--gap-md) .75rem var(--search-padding-bottom);
   max-width: 25rem;
   margin-inline: auto;
-  margin-top: var(--gap-md);
 }
 
 .logo {

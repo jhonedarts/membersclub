@@ -3,7 +3,7 @@
   width: fit-content;
   border: solid 2px transparent;
   border-radius: .75rem;
-  background-image: linear-gradient(var(--gray-100), var(--gray-100)), var(--gradient-base);
+  background-image: linear-gradient(var(--gray-100), var(--gray-100)), var(--gradient-base-photo);
   background-origin: border-box;
   background-clip: content-box, border-box;
   margin-bottom: auto;

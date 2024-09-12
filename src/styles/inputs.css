@@ -1,12 +1,14 @@
 .input-wrapper {
     position: relative;
 }
+
 .input-wrapper .btn-enter {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: .5rem;
 }
+
 .text-input {
     padding: .5rem 3.75rem .5rem .5rem;
     border-radius: .75rem;
@@ -19,12 +21,16 @@
     width: 100%;
     line-height: 2.5rem;
 }
-.text-input:hover, .text-input:active, .text-input:focus {
+
+.text-input:hover,
+.text-input:active,
+.text-input:focus {
     outline-offset: -1.5px;
     outline: 1.5px solid var(--primary-color);
     caret-color: var(--primary-color);
 }
-.text-input:placeholder-shown + .btn-enter {
+
+.text-input:placeholder-shown+.btn-enter {
     cursor: unset;
     pointer-events: none;
     opacity: .6;

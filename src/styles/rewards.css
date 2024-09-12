@@ -1,0 +1,91 @@
+#rewards {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.rewards-status {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.rewards-call {
+  font: var(--text-sm);
+}
+
+.rewards-call strong {
+  font: var(--title-sm);
+}
+
+.rewards-progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: .75rem;
+}
+
+.rewards-progress .bar-background {
+  height: .5rem;
+  width: 100%;
+  border-radius: 99px;
+  background-color: var(--gray-300);
+}
+
+.rewards-progress .bar-progress {
+  height: 100%;
+  border-radius: 99px;
+  background-image: var(--gradient-base);
+}
+
+.rewards-progress .coutdown {
+  white-space: nowrap;
+}
+
+.reward-gift {
+  height: 3.5rem;
+  aspect-ratio: 1/1;
+  background-color: var(--gray-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reward-gift::after {
+  content: '';
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  background-image: url(/src/assets/icons/pingift.svg);
+}
+
+@media (width >=80em) {
+  #rewards {
+    padding: 1.4rem 2rem;
+    gap: 2rem;
+  }
+
+  .rewards-call {
+    font: var(--text-md);
+  }
+
+  .rewards-call strong {
+    font: var(--title-md);
+  }
+
+  .rewards-status {
+    gap: .75rem;
+  }
+
+  .reward-gift {
+    height: 4.5rem;
+  }
+
+  .reward-gift::after {
+    width: 2.5rem;
+  }
+}

@@ -1,23 +1,29 @@
 .title-md {
   font: var(--title-md);
 }
+
 .title-sm {
   font: var(--title-sm);
 }
+
 .subtitle-md {
   font: var(--subtitle-md);
   text-transform: uppercase;
 }
+
 .subtitle-sm {
   font: var(--subtitle-sm);
   text-transform: uppercase;
 }
+
 .text-md {
   font: var(--text-md);
 }
+
 .text-sm {
   font: var(--text-sm);
 }
+
 .text-xs {
   font: var(--text-xs);
 }
@@ -25,18 +31,41 @@
 .block {
   display: block;
 }
+
 .flex {
   display: flex;
 }
+
 .space-between {
   justify-content: space-between;
+}
+
+.gray-100 {
+  color: var(--gray-100)
+}
+
+.gray-200 {
+  color: var(--gray-200)
+}
+
+.gray-300 {
+  color: var(--gray-300)
+}
+
+.gray-400 {
+  color: var(--gray-400)
 }
 
 .gray-500 {
   color: var(--gray-500)
 }
+
 .gray-600 {
   color: var(--gray-600)
+}
+
+.gray-700 {
+  color: var(--gray-700)
 }
 
 .content {
@@ -47,22 +76,22 @@
     "loyalty"
     "rewards"
     "history";
-  grid-template-rows: 1fr 2.5fr 1fr 5fr;
   row-gap: var(--gap-sm);
   column-gap: 1.5rem;
 
   max-width: 57rem;
   margin-inline: max(.75rem, calc((100% - 57rem) / 2));
+  margin-bottom: 1rem;
 }
 
 @media (width >=80em) {
   .content {
     grid-template-areas:
-    "profile loyalty loyalty"
-    "history loyalty loyalty"
-    "history rewards rewards";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+      "profile loyalty"
+      "history loyalty"
+      "history loyalty"
+      "history rewards";
+    grid-template-columns: 1fr 2fr;
   }
 }
 
@@ -71,19 +100,19 @@
   border: 1px solid var(--gray-300);
   background-color: var(--gray-100);
 }
+
 #profile {
   grid-area: profile;
 }
+
 #loyalty {
   grid-area: loyalty;
 }
 
 #rewards {
   grid-area: rewards;
-  background-color: darkkhaki;
 }
 
 #history {
   grid-area: history;
-  background-color: aquamarine;
 }

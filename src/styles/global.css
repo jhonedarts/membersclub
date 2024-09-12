@@ -1,14 +1,18 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --gradient-base: linear-gradient(-45deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  --gradient-base-photo: linear-gradient(-45deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
 
   --primary-color: #D658B3;
   --secondary-color: #45B442;
+  --secondary-color-back: rgba(69, 180, 66, 0.12);
 
   --gray-700: #332B31;
   --gray-600: #4A4448;
@@ -17,16 +21,16 @@
   --gray-300: #DFDCDF;
   --gray-200: #E9E7E9;
   --gray-100: #F4F1F2;
-  --white:    #FFFFFF;
+  --white: #FFFFFF;
 
   --font-family: "Oxygen", "sans-serif";
-  --title-md: 500 1.5rem/1.4 var(--font-family);
-  --title-sm: 500 1.125rem/1.4 var(--font-family);
-  --subtitle-md: 500 .875rem/1.4 var(--font-family);
-  --subtitle-sm: 500 .75rem/1.4 var(--font-family);
-  --text-md: 400 1rem/1.4 var(--font-family);
-  --text-sm: 400 .875rem/1.4 var(--font-family);
-  --text-xs: 400 .75rem/1.4 var(--font-family);
+  --title-md: bold 1.5rem/1.4 var(--font-family);
+  --title-sm: bold 1.125rem/1.4 var(--font-family);
+  --subtitle-md: bold .875rem/1.4 var(--font-family);
+  --subtitle-sm: bold .75rem/1.4 var(--font-family);
+  --text-md: normal 1rem/1.4 var(--font-family);
+  --text-sm: normal .875rem/1.4 var(--font-family);
+  --text-xs: normal .75rem/1.4 var(--font-family);
 
   --gap-lg: 2rem;
   --gap-md: 1rem;
@@ -36,7 +40,7 @@
   --search-padding-bottom: 1.25rem;
 }
 
-@media (width >= 80em) {
+@media (width >=80em) {
   :root {
     --gap-lg: 4rem;
     --gap-md: 2rem;
