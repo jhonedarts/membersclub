@@ -1,6 +1,5 @@
 "use strict"
 
-import "./styles/global.css"
-import "./styles/buttons.css"
+import "./styles/index.css"
 
 console.log('asdasd');

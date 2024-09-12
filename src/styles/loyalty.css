@@ -1,0 +1,74 @@
+#loyalty {
+  padding: 1.5rem 1.25rem 1.25rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+#loyalty .id {
+  background-color: var(--gray-300);
+  color: var(--gray-500);
+  font: var(--subtitle-sm);
+  text-transform: uppercase;
+  border-radius: 8rem;
+  padding: .21875rem .5rem;
+  white-space: nowrap;
+  margin-bottom: auto;
+}
+
+.loyalty-checks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--gap-sm);
+}
+
+.loyalty-checks .check-card {
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--gray-200);
+  border-radius: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loyalty-checks div::after {
+  content: '';
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.loyalty-checks .check-card.checked::after {
+  width: 2.5rem;
+  background-image: url(/src/assets/icons/checked.png);
+}
+
+.loyalty-checks .check-card.gift::after{
+  width: 1.5rem;
+  background-image: url(/src/assets/icons/gift-solid.svg);
+}
+.loyalty-checks .check-card.checked.gift::after,
+.loyalty-checks .check-card.gift.checked::after{
+  width: 1.5rem;
+  background-image: url(/src/assets/icons/pingift.svg);
+}
+
+@media (width >= 80em) {
+  .loyalty-checks .check-card {
+    height: 5.5rem;
+    border-radius: 1.25rem;
+  }
+  #loyalty .subtitle {
+    font: var(--text-sm);
+  }
+  #loyalty .id {
+    font: var(--subtitle-md);
+  }
+  .loyalty-checks .check-card.checked::after {
+    width: 4rem;
+  }
+  .loyalty-checks .check-card.checked.gift::after,
+  .loyalty-checks .check-card.gift.checked::after,
+  .loyalty-checks .check-card.gift::after {
+    width: 2.5rem;
+  }
+}
