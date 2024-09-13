@@ -1,17 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member's Club</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member's Club</title>
+
+  <link rel="stylesheet" href="/src/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 <script defer src="main.js"></script></head>
+
 <body>
-    <img src="./src/assets/logo.png" alt="logo da aplicação">
-    <button class="btn-enter"></button>
-    <button class="btn-enter" disabled></button>
+  <section id="hero">
+    <div class="search-field">
+      <img class="logo" src="./src/assets/logo.png" alt="logo da aplicação">
+      <form id="search-form">
+        <div class="input-wrapper">
+          <input id="search-id" class="text-input text-md" type="text" required  pattern="\d{3}-\d{3}-\d{3}-\d{3}" autocomplete="off" placeholder="ID do cartão">
+          <button id="search-id-button" class="btn-enter"></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <main class="content">
+    <section id="profile">
+      <div class="profile-picture">
+        <img src="/src/assets/icons/profile.jpg" alt="sem imagem de perfil">
+      </div>
+      <div class="profile-details">
+        <strong id="name" class="title-sm block gray-600">Nome do cliente</strong>
+        <p id="since" class="text-xs gray-500">Cliente desde XX/XX/XXXX</p>
+      </div>
+    </section>
+
+    <section id="loyalty">
+      <div class="flex space-between">
+        <div>
+          <h2 class="subtitle-sm gray-500">
+            cartão fidelidade
+          </h2>
+          <p class="subtitle text-xs gray-500">
+            Ao fazer cortes de cabelo, o décimo sai de graça!
+          </p>
+        </div>
+        <div id="id-label" class="id">
+          ID: XXX-XXX-XXX-XXX
+        </div>
+      </div>
+      <div id="loyalty-checks" class="loyalty-checks">
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card"></div>
+        <div class="check-card gift"></div>
+      </div>
+    </section>
+
+    <section id="rewards">
+      <div class="rewards-status gray-500">
+        <div class="rewards-call">
+          <strong class="gray-600">10</strong> cortes restantes
+        </div>
+        <div class="rewards-progress">
+          <div class="bar-background">
+            <div class="bar-progress" style="width: 0%;"></div>
+          </div>
+          <div class="coutdown text-xs">0 de 10</div>
+        </div>
+      </div>
+      <div class="reward-gift"></div>
+    </section>
+
+    <section id="history">
+      <header class="gray-500">
+        <div class="subtitle-sm">Histórico</div>
+        <div id="history-total" class="text-xs">0 cortes</div>
+      </header>
+      <div id="history-logs" class="history-logs">
+        <div id="empty-history" class="empty-history text-xs gray-500">
+          Nenhum registro
+        </div>
+        <!-- log-card example
+        <div class="log-card">
+          <div class="time-mark">
+            <div class="subtitle-sm gray-600">29/04/2024</div>
+            <div class="text-xs gray-500">18:30</div>
+          </div>
+          <div class="check-icon"></div>
+        </div>
+        -->
+      </div>
+    </section>
+  </main>
+
 </body>
+
 </html>
