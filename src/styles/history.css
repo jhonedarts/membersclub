@@ -21,11 +21,9 @@
 }
 
 #history .empty-history {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: .75rem;
-  border-top: 1px solid var(--gray-200);
 }
 
 .history-logs .log-card {

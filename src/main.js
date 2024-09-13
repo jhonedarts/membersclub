@@ -1,5 +1,4 @@
 "use strict"
 
 import "./styles/index.css"
-
-console.log('asdasd');
+import "./modules/search.js"
